@@ -1,3 +1,5 @@
+rm -rf Installer
+rm -rf DiscordWithVencord.app
 git clone https://github.com/Vencord/Installer.git
 cd Installer
 go mod tidy
@@ -10,3 +12,4 @@ echo "~/vencordinstaller -install -branch auto && open -a Discord" >> DiscordWit
 chmod +x DiscordWithVencord.app/discordwithvencord
 cp /Applications/Discord.app/Contents/Resources/electron.icns "DiscordWithVencord.app/discordwithvencord.icns"
 cp Info.plist DiscordWithVencord.app
+echo Done!
